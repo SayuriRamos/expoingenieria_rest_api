@@ -1,0 +1,21 @@
+#Turn Rewrite Engine On
+RewriteEngine On
+
+#Remove .php extension form users.php
+RewriteRule ^users/?$ users.php [NC,L]
+
+#Rewrite URL
+RewriteRule ^users/([0-9]+)/?$ users.php?id=$1 [NC,L]
+
+#Remove .php extension form proyecto.php
+RewriteRule ^proyecto/?$ proyecto.php [NC,L]
+
+#Rewrite URL
+RewriteRule ^proyecto/([0-9]+)/?$ proyecto.php?id=$1 [NC,L]
+
+#Remove .php extension form users.php
+RewriteRule ^juez/?$ juez.php [NC,L]
+
+#Rewrite URL
+RewriteRule ^juez/([0-9]+)/?$ juez.php?id=$1 [NC,L]
+
