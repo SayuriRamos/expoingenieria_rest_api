@@ -20,9 +20,12 @@
 
 	// Add a new juez into database
 	if ($api == 'POST') {
-	  $nombre = $juez->test_input($_POST['nombre']);
       $usuario = $juez->test_input($_POST['usuario']);
 	  $contrasena = $juez->test_input($_POST['contrasena']);
+
+      if ($juez->fetc) {
+        $data[0]['matricula']
+      }
 
 	  if ($juez->insert($nombre, $usuario, $contrasena)) {
 	    echo $juez->message('juez added successfully!',false);

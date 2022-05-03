@@ -19,3 +19,6 @@ RewriteRule ^juez/?$ juez.php [NC,L]
 #Rewrite URL
 RewriteRule ^juez/([0-9]+)/?$ juez.php?id=$1 [NC,L]
 
+#Remove .php extension form users.php
+RewriteRule ^rubrica_proyecto/?$ juez.php [NC,L]
+
